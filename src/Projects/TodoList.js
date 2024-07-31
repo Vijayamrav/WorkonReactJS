@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { useRef } from 'react';
 import Confetti from 'react-confetti';
+import "./todolist.css"
 
 const ToDoList = () => {
   const [tasks, setTasks] = useState([]);
   const [task, setTask] = useState('');
   const [filter, setFilter] = useState('all');
   const [showConfetti, setShowConfetti] = useState(false);
+  const audioRef=useRef(null);
 
   const handleAddTask = (e) => {
     e.preventDefault();
@@ -21,7 +24,9 @@ const ToDoList = () => {
     setTasks(newTasks);
 
     if (newTasks[index].completed) {
+
       setShowConfetti(true);
+      
       setTimeout(() => setShowConfetti(false), 4000); // Confetti duration
     }
   };
@@ -82,6 +87,8 @@ const ToDoList = () => {
         ))}
       </ul>
       {showConfetti && <Confetti />}
+     
+      
     </div>
   );
 };

@@ -1,26 +1,23 @@
 /* Sprinkle Animation */
-@keyframes sprinkle {
+@keyframes animateTasks {
     0% {
-      transform: scale(0) translateX(0);
-      opacity: 1;
+      transform:  translateX(-200px);
+      
     }
     50% {
-      transform: scale(1) translateX(50px);
-      opacity: 0.5;
+      transform:  translateX(30px);
+      
     }
-    100% {
-      transform: scale(0) translateX(100px);
-      opacity: 0;
-    }
+    /* 100% {
+      transform: translateX(70px);
+      
+    } */
+  }
+  .tasklist{
+    position:relative;
+    animation: animateTasks 2s infinite;
+    animation-iteration-count: 1;
   }
   
-  .sprinkle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #f39c12;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: sprinkle 1s ease-out;
-  }
+  
   
