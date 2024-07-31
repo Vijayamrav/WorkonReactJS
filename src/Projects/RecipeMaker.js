@@ -28,7 +28,7 @@ function RecipeApp() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Enter ingredient or dish name"
+              placeholder="Enter dish name"
               className="w-full px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-indigo-500"
             />
           </div>
