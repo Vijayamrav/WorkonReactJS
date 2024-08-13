@@ -7,7 +7,7 @@ const ToDoList = () => {
   const [task, setTask] = useState('');
   const [filter, setFilter] = useState('all');
   const [showConfetti, setShowConfetti] = useState(false);
-  const audioRef = useRef(null);
+  
 
   const handleAddTask = (e) => {
     e.preventDefault();

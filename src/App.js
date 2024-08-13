@@ -7,8 +7,6 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 function App() {
   return (
     <>
-    
-    
     <Router>
       <div className="App">
       <nav className="bg-gray-800 p-4 flex justify-center space-x-4">

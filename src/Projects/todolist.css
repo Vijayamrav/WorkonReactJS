@@ -18,6 +18,11 @@
     animation: animateTasks 2s infinite;
     animation-iteration-count: 1;
   }
+  .container{
+    height:100vh;
+    width:100%;
+    background-color: black;
+  }
   
   
   
